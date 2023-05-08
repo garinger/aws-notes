@@ -1,4 +1,4 @@
-# Module 1
+# Module 1 - Introduction to Amazon Web Services
 
 ### Three types of Deployment models for cloud computing
 1. **Cloud-based Deployment**
@@ -19,7 +19,7 @@
 - Easier and faster scaling
 - Easy global presense
 	
-### Module 1 Quiz:
+### Module 1 Quiz
 - What is cloud computing?
 	- On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
 - What is another name for on-premises deployment?
@@ -27,7 +27,7 @@
 - How does the scale of cloud computing help you to save costs?
 	- The aggregated cloud usage from a large number of customers results in lower pay-as-you-go prices.
 	
-# Module 2:
+# Module 2 - Compute in the cloud
 
 **Amazon Elastic Compute Cloud (Amazon EC2)**
 
@@ -126,7 +126,7 @@
 - You want to deploy and manage containerized applications. Which service should you use?
 	- Amazon Elastic Kubernetes Service (Amazon EKS)
 
-# Module 3:
+# Module 3 - Global infrastructure and reliability
 - Reasons for selecting a region
 	- Compliance with data governance and legal requirements.
 	- Proximity to customers
@@ -146,7 +146,7 @@ Each region is comprised of multiple availability zones
 		closer to your customers for faster delivery.
 		
 - **AWS Route 53 (DNS)**
-	- Amazon's Domain Name System
+	- Amazon's Domain Name Service
 
 - **AWS Outposts**
 	- Pretty much a mini region thats inside your own building.
@@ -180,4 +180,137 @@ Each region is comprised of multiple availability zones
 - Which action can you perform with AWS Outposts?
 	- Extend AWS infrastructure and services to your on-premises data center.
 
-# Module 4
+# Module 4 - Networking
+
+**Amazon Virtual Private Cloud (VPC)** - Your own private network within AWS.
+
+**Internet Gateway** - An internet gateway is a connection between a VPC and the internet.
+
+**Virtual Private Network** - A virtual private gateway enables you to establish a virtual private network (VPN) connection between your VPC and a private network, such as an on-premises data center or internal corporate network. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.
+
+**AWS Direct Connect** - A service that enables you to establish a dedicated private connection between your data center and a VPC (a physical fiber line).
+
+**Subnets** - A section of a VPC in which you can group resources based on security or operational needs. Subnets can be **public** or **private**.
+
+**Network access control lists (ACLs)** - A network access control list (ACL) is a virtual firewall that controls inbound and outbound traffic at the subnet level. ACLs check permissions both for entering and exiting packets. By default allow all traffic. ACLs are **stateless**.
+
+**Security Groups** - A security group is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance. Security groups check permissions only for entering packets. By default deny all traffic. Security groups are **stateful**.
+
+### Module 4 Quiz
+- Your company has an application that uses Amazon EC2 instances to run the customer-facing website and Amazon RDS database instances to store customers’ personal information. How should the developer configure the VPC according to best practices?
+	- Place the Amazon EC2 instances in a public subnet and the Amazon RDS database instances in a private subnet.
+- Which component can be used to establish a private dedicated connection between your company’s data center and AWS?
+	- AWS Direct Connect
+- Which statement best describes security groups?
+	- They are stateful and deny all inbound traffic by default.
+- Which component is used to connect a VPC to the internet?
+	- Internet gateway
+- Which service is used to manage the DNS records for domain names?
+	- Amazon Route 53
+
+# Module 5 - Storage and databases
+
+**Block-level Storage** - Pretty much just hard drives.
+
+**Instace Stores** - Temporary block-level storage for an EC2 instance. It is phyiscally attached to the host of your EC2 so data can be lost between startups the EC2 instance.
+
+**Elastic Block Store (Amazon EBS)** - A service that provides block-level storage volumes that you can use with Amazon EC2 instances. EBSs aren't attached to EC2 hosts so data is presistant between stoping/starting EC2 instances. You can take backups of EBS by creating **EBS snapshots**.
+- Sizes up to 16 TiB
+- Solid state by default
+- HDD options
+
+**Amazon EBS snapshots** - An incremental backup of EBS data. For the first backup, all data is copied. For subsequent backups, only data that has changed is backed up.
+
+**Object Storage** - Each object consists of data, metadata, and a key. Unlike block storage, the entire object is updated when it is modified.
+
+**Amazon Simple Storage Service (Amazon S3)** - A service that provides object-level storage. Amazon S3 stores data as objects in buckets. You can set permissions to control visibility and access. Also includes a versioning feature to track changes to objects over time.
+- Unlimited storage
+- Individual objects up to 5 TB
+- Write once/read many
+- 99.999999999% durability
+
+### Amazon S3 Storage Classes
+- **Amazon S3 Standard**
+	- Designed for frequently accessed data
+	- Stores data in a minimum of three Availability Zones
+	- General purpose
+- **Amazon S3 Standard-Infrequent Access (S3 Standard-IA)**
+	- Ideal for infrequently accessed data
+	- Lower storage price but higher retrieval price
+- **Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA)**
+	- Stores data in a single Availability Zone
+	- Has a lower storage price than Amazon S3 Standard-IA
+	- Pretty much just a cheaper version of S3 Standard-IA
+- **Amazon S3 Intelligent-Tiering**
+	- Ideal for data with unknown or changing access patterns
+	- Requires a small monthly monitoring and automation fee per object
+	- Data is stored in S3 Standard unless inactive for 30 consecutive days where it moves it to S3 Standard-IA
+- **Amazon S3 Glacier Instant Retrieval**
+	- Works well for **archived** data that requires immediate access
+	- Can retrieve objects within a few milliseconds
+- **Amazon S3 Glacier Flexible Retrieval**
+	- Low-cost storage designed for data archiving
+	- Able to retrieve objects within a few minutes to hours
+- **Amazon S3 Glacier Deep Archive**
+	- Lowest-cost object storage class ideal for archiving
+	- Able to retrieve objects within 12 to 48 hours
+	- Replication across at least three Availability Zones
+- **Amazon S3 Outposts**
+	- Creates S3 buckets on Amazon S3 Outposts
+	- Makes it easier to retrieve, store, and access data on AWS Outposts
+	- Designed to store data durably and redundantly across multiple devices and servers on your Outposts
+
+**Amazon Elastic File System (Amazon EFS)** - A scalable file system used with AWS Cloud services and on-premises resources. As you add and remove files, Amazon EFS grows and shrinks automatically. It can scale on demand to petabytes without disrupting applications.
+- Region level
+
+### EBS vs EFS
+- EBS is scoped to Availability Zones while EFS is scoped to Regions
+- EFS automatically scales while EBS doesn't
+
+**Amazon Relational Database Serivce (Amazon RDS)** - A service that enables you to run relational databases in the AWS Cloud. Amazon RDS automates the following tasks,
+- Hardware provisioning
+- Database setup
+- Patching
+- Backups
+
+**Amazon RDS supported database engines**
+- Amazon Aurora
+- PostgreSQL
+- MySQL
+- MariaDB
+- Oracle Database
+- Microsoft SQL Server
+
+**Amazon Aurora** - An enterprise-class relational database. It is compatible with MySQL and PostgreSQL relational databases. It is up to five times faster than standard MySQL databases and up to three times faster than standard PostgreSQL databases. Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.
+
+**Amazon DynamoDB** - A key-value database service. It delivers single-digit millisecond performance at any scale. **Pretty much Amazon's version of MongoDB**. Amazon DynamoDB has the following characteristics,
+- Serverless
+- Automatic scaling
+
+**Amazon Redshift** - A data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
+
+**AWS Database Migration Service (AWS DMS)** - Enables you to migrate relational databases, nonrelational databases, and other types of data stores. The source database and target database can be of the same type (MySQL to RDS MySQL) or a different type (PostgreSQL to DynamoDB). Other uses of AWS DMS include,
+- Development and test database migrations
+- Database consolidation
+- Continuous replication
+
+### Additional Database Services
+**Amazon DocumentDB** - A document database service that supports MongoDB workloads.
+**Amazon Neptune** - A graph database service. Good for things like social networks. 
+**Amazon Quantum Ledger Database (Amazon QLDB)** - A ledger database service.
+**Amazon Managed Blockchain** - A service that you can use to create and manage blockchain networks with open-source frameworks. 
+**Amazon ElastiCache** - A service that adds caching layers on top of your databases to help improve the read times of common requests. 
+**Amazon DynamoDB Accelerator** - An in-memory cache for DynamoDB. It helps improve response times from single-digit milliseconds to microseconds.
+
+### Module 5 Quiz
+- Which Amazon S3 storage classes are optimized for archival data?
+	- Amazon S3 Glacier Flexible Retrieval
+	- Amazon S3 Glacier Deep Archive
+- Which statement or statements are TRUE about Amazon EBS volumes and Amazon EFS file systems?
+	-EBS volumes store data within a single Availability Zone. Amazon EFS file systems store data across multiple Availability Zones.
+- You want to store data in an object storage service. Which AWS service is best for this type of storage?
+	- Amazon Simple Storage Service (Amazon S3)
+- Which statement best describes Amazon DynamoDB?
+	- A serverless key-value database service
+- Which service is used to query and analyze data across a data warehouse?
+	- Amazon Redshift
