@@ -319,7 +319,7 @@ Each region is comprised of multiple availability zones
 
 **Shared Responsibility Model** - The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).
 
-![SharedResponsibilityModel](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1683586800/Bfby9JZ42WWheRQcJHFAWw/tincan/48182b86c73ffe16940dfabe53710d740e5d80d2/assets/3YSwQ3LylCNzDyIW_eyqltDSWURM2V1xC.png)
+![SharedResponsibilityModel](https://d1.awsstatic.com/security-center/Shared_Responsibility_Model_V2.59d1eccec334b366627e9295b304202faf7b899b.jpg)
 
 **AWS Identity and Access Management (IAM)** - Enables you to manage access to AWS services and resources securely.
 
