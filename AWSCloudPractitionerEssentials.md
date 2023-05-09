@@ -388,7 +388,7 @@ Each region is comprised of multiple availability zones
 - Which task can AWS Key Management Service (AWS KMS) perform?
   - Create cryptographic keys.
 
-# Module 7 - Monitoring and Analytics
+# Module 7 - Monitoring and analytics
 
 **Amazon CloudWatch** - A web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics. CloudWatch uses **metrics** to represent the data points for your resources.
 
@@ -401,12 +401,12 @@ Each region is comprised of multiple availability zones
 **CloudTrail Insights** - This optional feature allows CloudTrail to automatically detect unusual API activities in your AWS account.
 
 **AWS Trusted Advisor** - A web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices. Trusted Advisor compares its findings to AWS best practices in these five categories,
-- Cost
-- Optimization
-- Performance
-- Security
-- Fault tolerance
-- Service limits
+- **Cost**
+- **Optimization**
+- **Performance**
+- **Security**
+- **Fault tolerance**
+- **Service limits**
 
 ### Module 7 Quiz
 - Which actions can you perform using Amazon CloudWatch?
@@ -417,3 +417,42 @@ Each region is comprised of multiple availability zones
 - Which categories are included in the AWS Trusted Advisor dashboard?
   - Performance
   - Fault tolerance
+
+# Module 8 - Pricing and support
+
+**AWS Free Tier** - Enables you to begin using certain services without having to worry about incurring costs for the specified period. Three types of the free tier,
+- **Always free**
+- **12 months free**
+- **Trials**
+
+**AWS Pricing Calculator** - Lets you explore AWS services and create an estimate for the cost of your use cases on AWS.
+
+**AWS Billing and Cost Management Dashboard** - Pay your AWS bill, monitor your usage, and analyze and control your costs.
+
+**Consolidated Billing** - The consolidated billing feature of AWS Organizations enables you to receive a single bill for all AWS accounts in your organization. Another benefit of consolidated billing is the ability to share bulk discount pricing, Savings Plans, and Reserved Instances across the accounts in your organization.
+
+**AWS Budgets** - You can create budgets to plan your service usage, service costs, and instance reservations. You can also set custom alerts when your usage exceeds (or is forecasted to exceed) the budgeted amount.
+
+**AWS Cost Explorer** - A tool that enables you to visualize, understand, and manage your AWS costs and usage over time.
+
+**AWS Support** - AWS offers four different Support plans to help you troubleshoot issues, lower costs, and efficiently use AWS services (not including free tier).
+- **Developer support**
+- **Business support**
+- **Enterprise on-ramp support**
+  - Includes a **Technical Account Manager (TAM)**
+- **Enterprise support**
+  - Includes a **Technical Account Manager (TAM)**
+
+**AWS Marketplace** - A digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS.
+
+### Module 8 Quiz
+- Which action can you perform with consolidated billing?
+  - Combine usage across accounts to receive volume pricing discounts.
+- Which pricing tool is used to visualize, understand, and manage your AWS costs and usage over time?
+  - AWS Cost Explorer
+- Which pricing tool enables you to receive alerts when your service usage exceeds a threshold that you have defined?
+  - AWS Budgets
+- Your company wants to receive support from an AWS Technical Account Manager (TAM). Which support plan should you choose?
+  - Enterprise On-Ramp or Enterprise
+- Which service or resource is used to find third-party software that runs on AWS?
+  - AWS Marketplace
