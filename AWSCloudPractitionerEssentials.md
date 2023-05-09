@@ -314,3 +314,59 @@ Each region is comprised of multiple availability zones
 	- A serverless key-value database service
 - Which service is used to query and analyze data across a data warehouse?
 	- Amazon Redshift
+
+# Module 6 - Security
+
+**Shared Responsibility Model** - The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).
+
+![SharedResponsibilityModel](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1683586800/Bfby9JZ42WWheRQcJHFAWw/tincan/48182b86c73ffe16940dfabe53710d740e5d80d2/assets/3YSwQ3LylCNzDyIW_eyqltDSWURM2V1xC.png)
+
+**AWS Identity and Access Management (IAM)** - Enables you to manage access to AWS services and resources securely.
+
+**AWS account root user** - This user has access to do **anything**. Ideally, you wouldn't use the root user for everyday tasks and should instead create other users.
+
+**IAM Users** - An identity that you create in AWS. By default, users have no permissions to do anything.
+
+**IAM Policies** - A document that allows or denies permissions to AWS services and resources.
+
+**IAM Groups** - An IAM group is a collection of IAM users. You can apply IAM policies to IAM roups.
+
+**IAM Roles** - An identity that you can assume to gain **temporary** access to permissions.
+
+**AWS Organizations** - You can use AWS Organizations to consolidate and manage multiple AWS accounts within a central location. You can centrally control permissions for the accounts in your organization by using **service control policies (SCPs)**. SCPs enable you to place restrictions on the AWS services, resources, and individual API actions that users and roles in each account can access.
+
+**Organizational Units (OUs)** - You can group accounts into organizational units to make it easier to manage accounts with similar business or security requirements.
+
+**AWS Artifact** - A service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of these two main sections,
+- **AWS Artifact Agreements**
+	- You can review, accept, and manage agreements for an individual account and for all your accounts in AWS Organizations. Different types of agreements are offered to address the needs of customers who are subject to specific regulations, such as the Health Insurance Portability and Accountability Act (HIPAA).
+- **AWS Artifact Reports**
+	- AWS Artifact Reports provide compliance reports from third-party auditors. These auditors have tested and verified that AWS is compliant with a variety of global, regional, and industry-specific security standards and regulations.
+
+**Customer Compliance Center** - Contains resources to help you learn more about AWS compliance.
+
+**AWS Shield** - A service that protects applications against DDoS attacks. AWS Shield provides two levels of protection: Standard and Advanced.
+- **AWS Shield Standard**
+	- AWS Shield Standard automatically protects all AWS customers at no cost. It protects your AWS resources from the most common, frequently occurring types of DDoS attacks.
+- **AWS Shield Advanced**
+	- AWS Shield Advanced is a paid service that provides detailed attack diagnostics and the ability to detect and mitigate sophisticated DDoS attacks.
+
+**AWS KeyManagement Service (AWS KMS)** - Enables you to perform encryption operations through the use of cryptographic keys. You can use AWS KMS to create, manage, and use cryptographic keys. You can also control the use of keys across a wide range of services and in your applications.
+
+**AWS WAF** - A web application firewall that lets you monitor network requests that come into your web applications.
+
+**Amazon Inspector** - Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments. It checks applications for security vulnerabilities and deviations from security best practices, such as open access to Amazon EC2 instances and installations of vulnerable software versions.
+
+**Amazon GuardDuty** - A service that provides intelligent threat detection for your AWS infrastructure and resources. It identifies threats by continuously monitoring the network activity and account behavior within your AWS environment.
+
+### Module 6 Quiz
+- Which statement best describes an IAM policy?
+	- A document that grants or denies permissions to AWS services and resources
+- An employee requires temporary access to create several Amazon S3 buckets. Which option would be the best choice for this task?
+	- IAM role
+- Which statement best describes the principle of least privilege?
+	- Granting only the permissions that are needed to perform specific tasks
+- Which service helps protect your applications against distributed denial-of-service (DDoS) attacks?
+	- AWS Shield
+- Which task can AWS Key Management Service (AWS KMS) perform?
+	- Create cryptographic keys.
