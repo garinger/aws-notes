@@ -507,3 +507,34 @@ Each region is comprised of multiple availability zones
   - 100 PB
 - Which statement best describes Amazon Lex?
   - A service that enables you to build conversational interfaces using voice and text
+
+# Module 10 - The cloud journey
+
+**AWS Well-Architected Framework** - Helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement. The six pillars are,
+- **Operational excellence**
+  - The ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
+- **Security**
+  - The ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.
+- **Reliability**
+  - Includes testing recovery procedures, scaling horizontally to increase aggregate system availability, and automatically recovering from failure.
+- **Performance efficiency**
+  - The ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
+- **Cost optimization**
+  - The ability to run systems to deliver business value at the lowest price point.
+- **Sustainability**
+  - The ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.
+
+### Advantages of cloud computing
+- **Trade upfront expense for variable expense.**
+- **Benefit from massive economies of scale.**
+- **Stop guessing capacity.**
+- **Increase speed and agility.**
+- **Stop spending money running and maintaining data centers.**
+- **Go global in minutes.**
+
+### Module 10 Quiz
+- Which pillar of the AWS Well-Architected Framework includes the ability to run workloads effectively and gain insights into their operations?
+  - Operational Excellence
+- What are the benefits of cloud computing?
+  - Increase speed and agility.
+  - Stop spending money running and maintaining data centers.
