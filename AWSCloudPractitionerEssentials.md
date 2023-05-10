@@ -456,3 +456,54 @@ Each region is comprised of multiple availability zones
   - Enterprise On-Ramp or Enterprise
 - Which service or resource is used to find third-party software that runs on AWS?
   - AWS Marketplace
+
+# Module 9 - Migration and innovation
+
+**AWS Cloud Adoption Framework (AWS CAF)** - Organizes guidance into six areas of focus, called Perspectives. Each Perspective addresses distinct responsibilities. The planning process helps the right people across the organization prepare for the changes ahead. The six areas of focus are,
+- **Business perspective**
+- **People perspective**
+- **Governance perspective**
+- **Platform perspective**
+- **Security perspective**
+- **Operations perspective**
+
+### 6 strategies for migration
+- **Rehosting**
+  - "Lift-and-shift"
+- **Replatforming**
+  - "Lift, tinker, and shift"
+- **Refactoring/re-architecting**
+  - Recreate app using cloud features
+- **Repurchasing**
+  - Move from traditional license to SaaS
+- **Retaining**
+  - Keep lights on until eventually retiring
+- **Retiring**
+  - Remove apps that aren't needed anymore
+
+**AWS Snow Family** - A series of products that are designed to help you migrate your data to AWS. Ideal if you have very large amounts of data (petabytes) that would take weeks or months to migrate. The members of the snow family are,
+- **AWS Snowcone**
+  - A small, rugged, and secure edge computing and data transfer device.
+  - 2 CPUs, 4GB memory, and 8TB storage.
+  - AWS ships it you, you upload your data, then you send it back. They'll add it to your AWS account (probably S3 bucket).
+- **AWS Snowball**
+  - **Snowball Edge Storage Optimized** - Devices are well suited for large-scale data migrations and recurring transfer workflows, in addition to local computing with higher capacity needs.
+    - Storage: 80TB HDD, 1TB SSD
+    - Compute: 40 vCPUs and 80GiB memory
+  - **Snowball Edge Compute Optimized** - Provides powerful computing resources for use cases such as machine learning, full motion video analysis, analytics, and local computing stacks.
+    - Storage: 42TB HDD and 7.68TB NVMe SSD
+    - Compute: 52 vCPUs and 208GiB memory
+- **AWS Snowmobile** - An exabyte-scale data transfer service used to move large amounts of data to AWS. You can transfer up to 100 petabytes of data per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi trailer truck.
+
+**Amazon SageMaker** - Enables you to quickly build, train, and deploy machine learning models?
+
+### Module 9 Quiz
+- Which Perspective of the AWS Cloud Adoption Framework helps you structure the selection and implementation of permissions?
+  - Security Perspective
+- Which strategies are included in the six strategies for application migration?
+  - Retaining
+  - Rehosting
+- What is the storage capacity of AWS Snowmobile?
+  - 100 PB
+- Which statement best describes Amazon Lex?
+  - A service that enables you to build conversational interfaces using voice and text
