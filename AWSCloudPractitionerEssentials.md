@@ -1,3 +1,18 @@
+# Table of contents
+
+- [Module 1 - Introduction to Amazon Web Services](#module1)
+- [Module 2 - Compute in the cloud](#module2)
+- [Module 3 - Global infrastructure and reliability](#module3)
+- [Module 4 - Networking](#module4)
+- [Module 5 - Storage and databases](#module5)
+- [Module 6 - Security](#module6)
+- [Module 7 - Monitoring and analytics](#module7)
+- [Module 8 - Pricing and support](#module8)
+- [Module 9 - Migration and innovation](#module9)
+- [Module 10 - The cloud journey](#module10)
+
+<a name="module1"></a>
+
 # Module 1 - Introduction to Amazon Web Services
 
 ### Three types of Deployment models for cloud computing
@@ -29,6 +44,8 @@
   - Private cloud deployment
 - How does the scale of cloud computing help you to save costs?
   - The aggregated cloud usage from a large number of customers results in lower pay-as-you-go prices.
+
+<a name="module2"></a>
 
 # Module 2 - Compute in the cloud
 
@@ -129,6 +146,8 @@
 - You want to deploy and manage containerized applications. Which service should you use?
   - Amazon Elastic Kubernetes Service (Amazon EKS)
 
+<a name="module3"></a>
+
 # Module 3 - Global infrastructure and reliability
 
 - Reasons for selecting a region
@@ -182,6 +201,8 @@ Each region is comprised of multiple availability zones
 - Which action can you perform with AWS Outposts?
   - Extend AWS infrastructure and services to your on-premises data center.
 
+<a name="module4"></a>
+
 # Module 4 - Networking
 
 **Amazon Virtual Private Cloud (VPC)** - Your own private network within AWS.
@@ -210,6 +231,8 @@ Each region is comprised of multiple availability zones
   - Internet gateway
 - Which service is used to manage the DNS records for domain names?
   - Amazon Route 53
+
+<a name="module5"></a>
 
 # Module 5 - Storage and databases
 
@@ -329,6 +352,8 @@ Each region is comprised of multiple availability zones
 - Which service is used to query and analyze data across a data warehouse?
   - Amazon Redshift
 
+<a name="module6"></a>
+
 # Module 6 - Security
 
 **Shared Responsibility Model** - The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).
@@ -388,6 +413,8 @@ Each region is comprised of multiple availability zones
 - Which task can AWS Key Management Service (AWS KMS) perform?
   - Create cryptographic keys.
 
+<a name="module7"></a>
+
 # Module 7 - Monitoring and analytics
 
 **Amazon CloudWatch** - A web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics. CloudWatch uses **metrics** to represent the data points for your resources.
@@ -401,6 +428,7 @@ Each region is comprised of multiple availability zones
 **CloudTrail Insights** - This optional feature allows CloudTrail to automatically detect unusual API activities in your AWS account.
 
 **AWS Trusted Advisor** - A web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices. Trusted Advisor compares its findings to AWS best practices in these five categories,
+
 - **Cost**
 - **Optimization**
 - **Performance**
@@ -409,6 +437,7 @@ Each region is comprised of multiple availability zones
 - **Service limits**
 
 ### Module 7 Quiz
+
 - Which actions can you perform using Amazon CloudWatch?
   - Monitor your resources’ utilization and performance
   - Access metrics from a single dashboard
@@ -418,9 +447,12 @@ Each region is comprised of multiple availability zones
   - Performance
   - Fault tolerance
 
+<a name="module8"></a>
+
 # Module 8 - Pricing and support
 
 **AWS Free Tier** - Enables you to begin using certain services without having to worry about incurring costs for the specified period. Three types of the free tier,
+
 - **Always free**
 - **12 months free**
 - **Trials**
@@ -436,6 +468,7 @@ Each region is comprised of multiple availability zones
 **AWS Cost Explorer** - A tool that enables you to visualize, understand, and manage your AWS costs and usage over time.
 
 **AWS Support** - AWS offers four different Support plans to help you troubleshoot issues, lower costs, and efficiently use AWS services (not including free tier).
+
 - **Developer support**
 - **Business support**
 - **Enterprise on-ramp support**
@@ -446,6 +479,7 @@ Each region is comprised of multiple availability zones
 **AWS Marketplace** - A digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS.
 
 ### Module 8 Quiz
+
 - Which action can you perform with consolidated billing?
   - Combine usage across accounts to receive volume pricing discounts.
 - Which pricing tool is used to visualize, understand, and manage your AWS costs and usage over time?
@@ -457,9 +491,12 @@ Each region is comprised of multiple availability zones
 - Which service or resource is used to find third-party software that runs on AWS?
   - AWS Marketplace
 
+<a name="module9"></a>
+
 # Module 9 - Migration and innovation
 
 **AWS Cloud Adoption Framework (AWS CAF)** - Organizes guidance into six areas of focus, called Perspectives. Each Perspective addresses distinct responsibilities. The planning process helps the right people across the organization prepare for the changes ahead. The six areas of focus are,
+
 - **Business perspective**
 - **People perspective**
 - **Governance perspective**
@@ -468,6 +505,7 @@ Each region is comprised of multiple availability zones
 - **Operations perspective**
 
 ### 6 strategies for migration
+
 - **Rehosting**
   - "Lift-and-shift"
 - **Replatforming**
@@ -482,6 +520,7 @@ Each region is comprised of multiple availability zones
   - Remove apps that aren't needed anymore
 
 **AWS Snow Family** - A series of products that are designed to help you migrate your data to AWS. Ideal if you have very large amounts of data (petabytes) that would take weeks or months to migrate. The members of the snow family are,
+
 - **AWS Snowcone**
   - A small, rugged, and secure edge computing and data transfer device.
   - 2 CPUs, 4GB memory, and 8TB storage.
@@ -498,6 +537,7 @@ Each region is comprised of multiple availability zones
 **Amazon SageMaker** - Enables you to quickly build, train, and deploy machine learning models?
 
 ### Module 9 Quiz
+
 - Which Perspective of the AWS Cloud Adoption Framework helps you structure the selection and implementation of permissions?
   - Security Perspective
 - Which strategies are included in the six strategies for application migration?
@@ -508,9 +548,12 @@ Each region is comprised of multiple availability zones
 - Which statement best describes Amazon Lex?
   - A service that enables you to build conversational interfaces using voice and text
 
+<a name="module10"></a>
+
 # Module 10 - The cloud journey
 
 **AWS Well-Architected Framework** - Helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement. The six pillars are,
+
 - **Operational excellence**
   - The ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
 - **Security**
@@ -525,6 +568,7 @@ Each region is comprised of multiple availability zones
   - The ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.
 
 ### Advantages of cloud computing
+
 - **Trade upfront expense for variable expense.**
 - **Benefit from massive economies of scale.**
 - **Stop guessing capacity.**
@@ -533,6 +577,7 @@ Each region is comprised of multiple availability zones
 - **Go global in minutes.**
 
 ### Module 10 Quiz
+
 - Which pillar of the AWS Well-Architected Framework includes the ability to run workloads effectively and gain insights into their operations?
   - Operational Excellence
 - What are the benefits of cloud computing?
